@@ -33,7 +33,7 @@ body {
 .nav-brand {
   font-size: 1.6rem;
   font-weight: 700;
-  background: linear-gradient(90deg, #00f5d4, #ff9e00);
+  background: white;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
