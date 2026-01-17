@@ -1,81 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanessa Ramirez</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Barra de navegación -->
-    <nav class="navbar">
-        <div class="nav-brand">Vanessa</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        
+    <!-- Navegación Fija -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="logo">Vanessa</a>
+            <ul class="nav-links">
+                <li><a href="#about"><span class="nav-number">01.</span> Sobre mí</a></li>
+                <li><a href="#work"><span class="nav-number">02.</span> Proyectos</a></li>
+                <li><a href="#contact"><span class="nav-number">03.</span> Contacto</a></li>
+                <li><a href="assets/cv-vanessa.pdf" class="btn-resume" target="_blank">Curriculum</a></li>
+            </li>           
+         </ul>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </nav>
 
-    <!-- Sección: Inicio (Hero) -->
-    <section class="fullscreen" id="home">
-        <div class="section-inner">
-            <h1>Hi, I'm Vanessa!</h1>
-            <p>I'm a creative and independent web developer from Venezuela.</p>
-            <a href="#about" class="btn">About me</a>
-        </div>
-    </section>
+    <!-- Contenido Principal -->
+    <main>
+        
+        <section id="inicio" class="section hero-section">
+            <div class="container">
+                <p class="hero-greeting">¡Hola, mi nombre es</p>
+                <h1 class="hero-title">Vanessa Ramirez.</h1>
+                <h2 class="hero-subtitle">Creo experiencias digitales.</h2>
+                <p class="hero-description">
+                    Soy una <strong>desarrolladora frontend</strong> autodidacta de Venezuela, apasionada por construir sitios web y aplicaciones modernas, accesibles y centradas en el usuario. Actualmente, me especializo en crear experiencias digitales únicas.
+                </p>
+                <a href="#contact" class="btn-primary">¡Hablemos!</a>
+            </div>
+        
+            <div class="hero-image-container">
+               
+                <img src="vane.png" alt="Foto de Vanessa Ramirez" class="hero-image">
+                <div class="image-frame"></div>
+            </div>
+        </section>
 
-    <!-- Sección: Sobre mí -->
-    <section class="fullscreen" id="about">
-        <div class="section-inner">
-            <h2>About me</h2>
-            <p>
-            I'm a self-taught front-end developer passionate about clean design and user experience.
-            I love transforming ideas into functional and visually compelling websites using HTML, CSS, and JavaScript.
-            Currently, I continue to learn and expand my skills to create more comprehensive solutions.
-            Based in Venezuela, I'm open to remote work opportunities worldwide. I'm characterized by my responsibility, creativity, and desire to continue learning.
-            </p>
-            <a href="assets/cv-vanessa.pdf.pdf" download class="btn">Download CV</a>
-        </div>
-    </section>
+    
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title"><span class="section-number">01.</span> Sobre mí</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>¡Hola! Me llamo Vanessa y disfruto creando cosas que viven en internet. Mi interés en el desarrollo web comenzó en 2024, cuando decidí que quería transformar ideas en realidades interactivas.</p>
+                        <p>Hoy en día, tengo el privilegio de trabajar como <strong>desarrolladora freelance</strong>, ayudando a clientes a llevar sus visiones a la web con <strong>HTML, CSS, JavaScript y Vue.js</strong>.</p>
+                        <p>Mi objetivo es siempre construir productos que no solo cumplan con los requisitos, sino que superen las expectativas en rendimiento y diseño.</p>
+                        <p>Aquí hay algunas tecnologías con las que trabajo actualmente:</p>
+                        <ul class="skills-list">
+                            <li>JavaScript (ES6+)</li>
+                            <li>Vue.js </li>
+                            <li>HTML & CSS</li>
+                            <li>Git & GitHub</li>
+                            <li>Python (basico)</li>
+                        </ul>
+                    </div>
+                  
+                </div>
+            </div>
+        </section>
 
-    <!-- Sección: Habilidades -->
-    <section class="fullscreen" id="skills">
-        <div class="section-inner">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Framework (Vue.js)</li>
-                <li>Git & GitHub</li>
-            </ul>
+    
+        <section id="work" class="section">
+            <div class="container">
+                <h2 class="section-title"><span class="section-number">03.</span> Algunos proyectos que he construido</h2>
+                <!-- Proyecto 1 -->
+                <article class="project">
+                    <div class="project-content">
+                        <p class="project-overline">Proyecto 1</p>
+                        <h3 class="project-title">Celeste Shop</h3>
+                        <div class="project-description">
+                            <p>Una landing page moderna y completamente responsiva para un producto digital ficticio. Desarrollada con un enfoque <em>mobile-first</em>, incluye animaciones sutiles con CSS y un formulario funcional con validación en JavaScript.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Vue.js</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/vanessahernan/celeste-shop.git" aria-label="Enlace a GitHub del proyecto"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="Enlace al sitio web del proyecto en vivo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <a href="#">
+                            <img src="assets/proyecto1.png" alt="Proyecto Celeste Shop">
+                        </a>
+                    </div>
+                </article>
+                
+                 <!-- Proyecto 2: Tu Web Activa -->
+<article class="project">
+    <div class="project-content">
+        <p class="project-overline">Proyecto en Producción</p>
+        <h3 class="project-title">codeW3b</h3>
+        <div class="project-description">
+            <p>Catálogo digital de servicios de desarrollo web que ayuda a clientes a identificar la solución perfecta para sus necesidades. Combina diseño visual limpio con funcionalidad de filtrado intuitivo, permitiendo explorar diferentes tipos de proyectos (desde Landing Pages hasta E-commerce completos) en una interfaz unificada y moderna.</p>
         </div>
-    </section>
-
-    <!-- Sección: Proyectos -->
-    <section class="fullscreen" id="projects">
-        <div class="section-inner">
-            <h2>projects</h2>
-            <p>I'll be sharing my projects here soon. I'm working on them!</p>
+        <ul class="project-tech-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Vue.js</li>
+            <li>Python</li>
+        </ul>
+        <div class="project-links">
+            <a href="https://github.com/tu-usuario/codew3b" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               aria-label="Código en GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://peaceful-conkies-eecb10.netlify.app/#/servicios" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               aria-label="Visitar sitio web">
+                <i class="fas fa-external-link-alt"></i>
+            </a>
         </div>
-    </section>
+    </div>
+    <div class="project-image">
+        <a href="https://peaceful-conkies-eecb10.netlify.app/#/servicios" 
+           target="_blank" 
+           rel="noopener noreferrer">
 
-    <!-- Sección: Contacto -->
-    <section class="fullscreen" id="contact">
-        <div class="section-inner">
-            <h2>Contact to me</h2>
-            <p>Connect with me on social media or write to me directly!</p>
+            <img src="assets/proyecto2.png" 
+                 alt="Sitio codeW3b filtro de servicios">
+        </a>
+    </div>
+</article>
+</article>
+            </div>
+        </section>
+
+
+        <section id="contact" class="section">
+            <div class="container narrow">
+                <p class="contact-overline">¿Qué sigue?</p>
+                <h2 class="contact-title">Contactame</h2>
+                <p class="contact-description">
+                    Mi bandeja de entrada está siempre abierta. Si tienes una pregunta, una oportunidad o solo quieres saludar, ¡haré todo lo posible por responderte!
+                </p>
+                <a href="mailto:hernamdezvanessa16@gmail.com" class="btn-primary btn-large">Enviar un correo</a>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container">
             <div class="social-links">
-      <a href="https://github.com/vanessahernan" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="https://www.linkedin.com/in/vanessa-ramirez-45529938b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a href="mailto:hernamdezvanessa16@gmail.com">Email</a>
+                <a href="https://github.com/vanessahernan" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/vanessa-ramirez-45529938b" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:hernamdezvanessa16@gmail.com" aria-label="Enviar correo"><i class="fas fa-envelope"></i></a>
+            </div>
+        
         </div>
-    </section>
+    </footer>
 
+
+    <script src="script.js"></script>
 </body>
 </html>
