@@ -45,3 +45,13 @@ document.addEventListener('DOMContentLoaded', function() {
         copyrightElement.innerHTML = copyrightElement.innerHTML.replace('Vanessa.', `© ${currentYear}. Vanessa.`);
     }
 });
+
+const project = ["JavaScript (ES6+)", "Vue.js", "HTML & CSS", "Node.js"];
+const skills = document.getElementById('project-skills');
+
+skills.innerHTML = project.map(skill => `<li>${skill}</li>`).join('');
+
+const projectTech = ["HTML5", "CSS3", "JavaScript", "Vue.js", "Python", "Django"];
+const projectList = document.getElementById('project-list');
+
+projectList.innerHTML = projectTech.map(tech => `<li>${tech}</li>`).join('');
