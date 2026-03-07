@@ -1,12 +1,11 @@
-
 document.addEventListener('DOMContentLoaded', function() {
+    // --- Lógica del Menú Toggle ---
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
 
     if (menuToggle) {
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-           
             const icon = menuToggle.querySelector('i');
             if (icon.classList.contains('fa-bars')) {
                 icon.classList.replace('fa-bars', 'fa-times');
@@ -15,17 +14,19 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Cerrar menú al hacer click en un enlace
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-            const icon = menuToggle.querySelector('i');
-            if (icon.classList.contains('fa-times')) {
+            if (navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
                 icon.classList.replace('fa-times', 'fa-bars');
             }
         });
     });
 
- 
+    // --- Efecto del Navbar al Scroll ---
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -37,21 +38,26 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // --- Inyección Dinámica de Tecnologías ---
     
+    // Proyecto 1: Celeste Shop
+    const project1Tech = ["JavaScript (ES6+)", "Vue.js", "HTML & CSS", "Node.js"];
+    const skillsContainer = document.getElementById('project-skills');
+    if (skillsContainer) {
+        skillsContainer.innerHTML = project1Tech.map(skill => `<li>${skill}</li>`).join('');
+    }
+
+    // Proyecto 2: codeW3b
+    const project2Tech = ["HTML5", "CSS3", "JavaScript", "Vue.js", "Python", "Django"];
+    const projectListContainer = document.getElementById('project-list');
+    if (projectListContainer) {
+        projectListContainer.innerHTML = project2Tech.map(tech => `<li>${tech}</li>`).join('');
+    }
+
+    // --- Copyright Dinámico ---
     const copyrightElement = document.querySelector('.copyright');
     if (copyrightElement) {
         const currentYear = new Date().getFullYear();
-      
-        copyrightElement.innerHTML = copyrightElement.innerHTML.replace('Vanessa.', `© ${currentYear}. Vanessa.`);
+        copyrightElement.innerHTML = `© ${currentYear} Vanessa Ramirez.`;
     }
 });
-
-const project = ["JavaScript (ES6+)", "Vue.js", "HTML & CSS", "Node.js"];
-const skills = document.getElementById('project-skills');
-
-skills.innerHTML = project.map(skill => `<li>${skill}</li>`).join('');
-
-const projectTech = ["HTML5", "CSS3", "JavaScript", "Vue.js", "Python", "Django"];
-const projectList = document.getElementById('project-list');
-
-projectList.innerHTML = projectTech.map(tech => `<li>${tech}</li>`).join('');

@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanessa Ramirez</title>
+    <title>Vanessa Ramirez | Frontend Developer</title>
     <link rel="stylesheet" href="style.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navegación Fija -->
     <nav id="navbar">
         <div class="nav-container">
             <a href="#inicio" class="logo">Vanessa</a>
@@ -20,62 +17,55 @@
                 <li><a href="#work"><span class="nav-number">02.</span> Proyectos</a></li>
                 <li><a href="#contact"><span class="nav-number">03.</span> Contacto</a></li>
                 <li><a href="assets/cv-vanessa.pdf" class="btn-resume" target="_blank">Curriculum</a></li>
-            </li>           
-         </ul>
+            </ul>
             <button class="menu-toggle" aria-label="Abrir menú">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
     </nav>
 
-    <!-- Contenido Principal -->
     <main>
-        
         <section id="inicio" class="section hero-section">
             <div class="container">
                 <p class="hero-greeting">¡Hola, mi nombre es</p>
                 <h1 class="hero-title">Vanessa Ramirez.</h1>
                 <h2 class="hero-subtitle">Creo experiencias digitales.</h2>
                 <p class="hero-description">
-                    Soy una <strong>desarrolladora frontend</strong> autodidacta de Venezuela, apasionada por construir sitios web y aplicaciones modernas, accesibles y centradas en el usuario. Actualmente, me especializo en crear experiencias digitales únicas.
+                    Soy una <strong>desarrolladora frontend</strong> autodidacta de Venezuela, apasionada por construir sitios web y aplicaciones modernas, accesibles y centradas en el usuario.
                 </p>
                 <a href="#contact" class="btn-primary">¡Hablemos!</a>
             </div>
         
             <div class="hero-image-container">
-               
                 <img src="vane.png" alt="Foto de Vanessa Ramirez" class="hero-image">
                 <div class="image-frame"></div>
             </div>
         </section>
 
-    
         <section id="about" class="section">
             <div class="container">
                 <h2 class="section-title"><span class="section-number">01.</span> Sobre mí</h2>
                 <div class="about-content">
                     <div class="about-text">
-                        <p>¡Hola! Soy Vanessa, actualmente me desempeño como desarrolladora freelance, colaborando estrechamente con clientes para materializar sus visiones mediante el uso de HTML, CSS, JavaScript y Vue.js. Mi enfoque no se limita a cumplir con los requerimientos técnicos; mi objetivo es superar las expectativas mediante la optimización del rendimiento</p>
-                        <p>Me encuentro en una etapa de fortalecimiento técnico constante, perfeccionando mis habilidades en el ecosistema Frontend y explorando la integración con tecnologías de servidor para ofrecer productos integrales. Soy una profesional comprometida con el aprendizaje autónomo y la adopción de las mejores prácticas para garantizar un código limpio y mantenible.</p>
+                        <p>¡Hola! Soy Vanessa, actualmente me desempeño como desarrolladora freelance, colaborando estrechamente con clientes para materializar sus visiones mediante el uso de HTML, CSS, JavaScript y Vue.js.</p>
+                        <p>Me encuentro en una etapa de fortalecimiento técnico constante, perfeccionando mis habilidades en el ecosistema Frontend. Soy una profesional comprometida con el aprendizaje autónomo.</p>
                         <p>Aquí hay algunas tecnologías con las que trabajo actualmente:</p>
                         <ul class="skills-list">
                             <li>JavaScript (ES6+)</li>
-                            <li>Vue.js </li>
+                            <li>Vue.js</li>
                             <li>HTML & CSS</li>
                             <li>Git & GitHub</li>
-                            <li>Python (basico)</li>
+                            <li>Python (básico)</li>
                         </ul>
                     </div>
-                  
                 </div>
             </div>
         </section>
 
-    
         <section id="work" class="section">
             <div class="container">
-                <h2 class="section-title"><span class="section-number">03.</span> Algunos proyectos que he construido</h2>
-                <!-- Proyecto 1 -->
+                <h2 class="section-title"><span class="section-number">02.</span> Algunos proyectos que he construido</h2>
+                
                 <article class="project">
                     <div class="project-content">
                         <p class="project-overline">Proyecto 1</p>
@@ -85,8 +75,8 @@
                         </div>
                         <ul class="project-tech-list" id="project-skills"></ul>
                         <div class="project-links">
-                            <a href="https://github.com/vanessahernan/celeste-shop.git" aria-label="Enlace a GitHub del proyecto"><i class="fab fa-github"></i></a>
-                            <a href="#" aria-label="Enlace al sitio web del proyecto en vivo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/vanessahernan/celeste-shop.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="Sitio en vivo"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <div class="project-image">
@@ -96,69 +86,54 @@
                     </div>
                 </article>
                 
-                 <!-- Proyecto 2: Tu Web Activa -->
-<article class="project">
-    <div class="project-content">
-        <p class="project-overline">Proyecto 2</p>
-        <h3 class="project-title">codeW3b</h3>
-        <div class="project-description">
-            <p>Catálogo digital de servicios de desarrollo web que ayuda a clientes a identificar la solución perfecta para sus necesidades. Combina diseño visual limpio con funcionalidad de filtrado intuitivo, permitiendo explorar diferentes tipos de proyectos (desde Landing Pages hasta E-commerce completos) en una interfaz unificada y moderna.</p>
-        </div>
-        <ul class="project-tech-list" id="project-list"></ul>
-        <div class="project-links">
-            <a href="https://github.com/vanessahernan/codew3b-fullstack.git" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               aria-label="Código en GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://codew3b.netlify.app" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               aria-label="Visitar sitio web">
-                <i class="fas fa-external-link-alt"></i>
-            </a>
-        </div>
-    </div>
-    <div class="project-image">
-        <a href="https://codew3b.netlify.app" 
-           target="_blank" 
-           rel="noopener noreferrer">
-
-            <img src="assets/proyecto2.png" 
-                 alt="Sitio codeW3b filtro de servicios">
-        </a>
-    </div>
-</article>
-</article>
+                <article class="project">
+                    <div class="project-content">
+                        <p class="project-overline">Proyecto 2</p>
+                        <h3 class="project-title">codeW3b</h3>
+                        <div class="project-description">
+                            <p>Catálogo digital de servicios de desarrollo web con funcionalidad de filtrado intuitivo, permitiendo explorar diferentes tipos de proyectos en una interfaz moderna.</p>
+                        </div>
+                        <ul class="project-tech-list" id="project-list"></ul>
+                        <div class="project-links">
+                            <a href="https://github.com/vanessahernan/codew3b-fullstack.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://codew3b.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Visitar sitio">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <a href="https://codew3b.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/proyecto2.png" alt="Sitio codeW3b">
+                        </a>
+                    </div>
+                </article>
             </div>
         </section>
-
 
         <section id="contact" class="section">
             <div class="container narrow">
                 <p class="contact-overline">¿Qué sigue?</p>
-                <h2 class="contact-title">Contactame</h2>
+                <h2 class="contact-title">Contáctame</h2>
                 <p class="contact-description">
-                    "Me encuentro en un proceso de formación continua y fortalecimiento técnico, con el firme objetivo de evolucionar mis competencias y aportar el máximo valor a cada desarrollo. Estoy disponible para integrarme a proyectos que prioricen el impacto funcional y la excelencia visual. Mi enfoque se centra en la arquitectura de código limpio, escalable y la creación de interfaces optimizadas para la experiencia de usuario (UX). Si mi perfil técnico y mi compromiso con el aprendizaje constante se alinean con los objetivos de su organización, le invito a contactarme para iniciar una colaboración exitosa."
+                    Si mi perfil técnico y mi compromiso con el aprendizaje constante se alinean con los objetivos de su organización, le invito a contactarme para iniciar una colaboración exitosa.
                 </p>
                 <a href="mailto:hernamdezvanessa16@gmail.com" class="btn-primary btn-large">Enviar un correo</a>
             </div>
         </section>
     </main>
 
-
     <footer>
         <div class="container">
             <div class="social-links">
                 <a href="https://github.com/vanessahernan" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/vanessa-ramirez-45529938b" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="mailto:hernamdezvanessa16@gmail.com" aria-label="Enviar correo"><i class="fas fa-envelope"></i></a>
+                <a href="mailto:hernamdezvanessa16@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
-        
+            <p class="copyright">Vanessa Ramirez.</p>
         </div>
     </footer>
-
 
     <script src="script.js"></script>
 </body>
